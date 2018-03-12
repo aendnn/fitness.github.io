@@ -28,27 +28,31 @@
       </section>
       <div class="header-wrapper container">
         <a class="index-logo">
-          <img src="#" alt="Logotype of shop">
+          <img src="img/logo.png" alt="Logotype of shop" width="182" height="45">
         </a>
         <section class="for-user">
-          <h2 class="visually-hidden">Links and information for user</h2>
-          <ul class="user-account">
-            <li>
-              <a class="user user-login" href="#">Login</a>
-            </li>
-            <li>
-              <a class="user user-register" href="#">Register</a>
-            </li>
-          </ul>
-          <p class="cart">
-            <span class="cart-icon">My Cart ( 0 ) : $0</span>
-            <a class="btn to-checkout" href="to-cart.html">CHECKOUT</a>
-          </p>
+          <div class="for-user-wrapper">
+            <h2 class="visually-hidden">Links and information for user</h2>
+            <ul class="user-account">
+              <li>
+                <a class="user user-login current-user" href="#">Login</a>
+              </li>
+              <li>
+                <a class="user user-register" href="#">Register</a>
+              </li>
+            </ul>
+            <p class="cart">
+              <span class="cart-icon">My Cart ( 0 ) : $0</span>
+              <a class="btn to-checkout" href="to-cart.html">CHECKOUT</a>
+            </p>
+        </div>
           <form class="form-search">
-            <input type="search" name="search-field" id="search-field" placeholder="Search">
+            <input class="input-search" type="search" name="search-field" id="search-field" placeholder="Search">
             <label class="visually-hidden" for="search-field">Type name of thing which you want to find</label>
+            <span class="search-icon"></span>
           </form>
         </section>
+      </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li class="navigation-item">
@@ -78,7 +82,6 @@
             </li>
           </ul>
         </nav>
-      </div>
   </header>
   <main class="container">
     <section class="shop-categories">
