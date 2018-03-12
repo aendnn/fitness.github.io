@@ -127,8 +127,8 @@ body {
 
 .links-list {
   display: flex;
-  justify-content: space-between;
-  width: 247px;
+  flex-wrap: wrap;
+  min-width: 260px;
   margin: 0;
   margin-right: auto;
   padding: 0;
@@ -137,23 +137,43 @@ body {
 
 .links-list li {
   padding: 8px 0;
-  margin-right: 20px;
+  margin-right: 24px;
 }
 
 .shop-link {
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
   color: #fffafa;
+}
+
+.shop-link:hover,
+.shop-link:focus {
+  text-decoration: underline;
+}
+
+.shop-link:active {
+  opacity: 0.5;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.number {
+  max-width: 160px;
+  margin-top: 1px;
 }
 
 .call-us {
   position: relative;
   display: block;
-  max-width: 160px;
-  margin-left: auto;
-  margin-right: 20px;
-  margin-top: 1px;
   padding: 8px 0;
   padding-left: 30px;
   font-size: 12px;
@@ -174,8 +194,18 @@ body {
   background-position: -83px -97px;
 }
 
+.call-us:hover,
+.call-us:focus {
+  text-decoration: underline;
+}
+
+.call-us:active {
+  opacity: 0.5;
+}
+
 .header-wrapper {
   display: flex;
+  margin-bottom: 22px;
 }
 
 .index-logo {
@@ -200,7 +230,6 @@ body {
   width: 180px;
   margin: 0;
   margin-right: 40px;
-
   padding: 0;
   list-style: none;
 }
@@ -218,6 +247,11 @@ body {
   padding: 8px 19px;
   text-transform: uppercase;
   color: #3f3d3d;
+}
+
+.user:hover,
+.user:focus {
+  color: #000000;
 }
 
 .current-user {
@@ -264,6 +298,15 @@ body {
   background-color: #000000;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #bab1b1;
+}
+
+.btn:active {
+  transform: translateY(3px);
+}
+
 .form-search {
   display: flex;
   flex-direction: column;
@@ -296,6 +339,44 @@ body {
   background-position: -134px -10px;
 }
 
-.main-navigation {
+.input-search:hover,
+.input-search:focus {
+  outline: 0;
+  border-color: #bab1b1;
+}
+
+.site-navigation {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-item:last-child {
+  width: 215px;
+}
+
+.navigation-link {
+  display: block;
+  padding: 13px 25px;
+  text-transform: uppercase;
+  color: #3f3d3d;
+  background-color: #f5f5f5;
+}
+
+.current-nav-link {
+  padding: 13px 26px;
+  background-color: #e4e4e4;
+}
+
+.navigation-link:not(.current-nav-link):hover,
+.navigation-link:not(.current-nav-link):focus {
+  color: #ffffff;
+  background-color: #bab1b1;
+}
+
+.navigation-link:not(.current-nav-link):active {
+  opacity: 0.5;
 }
