@@ -1,1 +1,106 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", serif;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 300;
+  color: #3f3d3d;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.shop-nav {
+  color: #fffafa;
+  background-color: #252525;
+}
+
+.shop-nav .container {
+  display: flex;
+}
+
+.links-list {
+  display: flex;
+  justify-content: space-between;
+  width: 247px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.links-list li {
+  padding: 8px 0;
+  margin-right: 20px;
+}
+
+.shop-link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  color: #fffafa;
+}
+
+.call-us {
+  position: relative;
+  display: block;
+  max-width: 160px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 1px;
+  padding: 8px 0;
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  color: #fffafa;
+}
+
+.call-us::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 10px;
+  left: 8px;
+  background-image: url("../img/telephone.png");
+  background-repeat: no-repeat;
+}
