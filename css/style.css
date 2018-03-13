@@ -380,3 +380,146 @@ body {
 .navigation-link:not(.current-nav-link):active {
   opacity: 0.5;
 }
+
+.shop-categories {
+  margin-bottom: 65px;
+  padding-top: 20px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories-item {
+  margin-right: 20px;
+  margin-bottom: 17px;
+}
+
+.categories-item:nth-child(2),
+.categories-item:nth-child(3),
+.categories-item:nth-child(6), {
+  margin-right: 0;
+}
+
+.category {
+  position: relative;
+}
+
+.category img {
+  background-color: #e5e4e2;
+}
+
+.category-wrapper {
+  position: absolute;
+  top: 170px;
+  left: 108px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sweater {
+  top: 115px;
+  left: 229px;
+}
+
+.t-shirt {
+  top: 145px;
+  left: 44px;
+}
+
+.category-name {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-family: "Playfair", "Georgia", serif;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #f9f9f9;
+}
+
+.t-shirt .category-name {
+  margin-bottom: 16px;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.just-name {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.just-name::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -92px;
+  width: 30px;
+  height: 18px;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+}
+
+.glasses::after {
+  top: 3px;
+  right: -100px;
+}
+
+.watches::after {
+  right: -81px;
+}
+
+.about-category {
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ededed;
+}
+
+.category-link {
+  display: block;
+  width: 120px;
+  margin-left: 60px;
+  padding: 7px 10px;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.t-shirt .category-link {
+  margin-left: 65px;
+}
+
+.category-link:hover,
+.category-link:focus {
+  border-color: #3f3d3d;
+}
+
+.just-name:hover,
+.just-name:focus {
+  text-decoration: underline;
+}
