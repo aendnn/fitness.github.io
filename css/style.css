@@ -382,8 +382,9 @@ body {
 }
 
 .shop-categories {
-  margin-bottom: 65px;
+  margin-bottom: 14px;
   padding-top: 20px;
+  padding-bottom: 45px;
 }
 
 .categories-list {
@@ -522,4 +523,143 @@ body {
 .just-name:hover,
 .just-name:focus {
   text-decoration: underline;
+}
+
+.shop-offers {
+  position: relative;
+  padding-bottom: 85px;
+}
+
+.shop-offers::before,
+.shop-offers::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 940px;
+  height: 1px;
+  background-color: #e5e4e2;
+}
+
+.shop-offers::after {
+  content: "";
+  position: absolute;
+  top: 438px;
+  left: 0;
+  width: 940px;
+  height: 1px;
+  background-color: #e5e4e2;
+}
+
+.offers-heading {
+  position: relative;
+  z-index: 5;
+  top: -22px;
+  left: -9px;
+  width: 195px;
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  padding: 8px 21px;
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #3f3d3d;
+  background-color: #ffffff;
+  border: 1px solid #e5e4e2;
+}
+
+.offers-list {
+  display: flex;
+  margin: 0;
+  margin-top: 21px;
+  padding: 0;
+  list-style: none;
+}
+
+.offer-item {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.offer-item:last-child {
+  margin-right: 0;
+}
+
+.offer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e4e2;
+}
+
+.offer-pic {
+  order: -1;
+}
+
+.offer-heading {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-family: "PlayFair Display", "Georgia", serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: #3f3d3d;
+}
+
+.offer-price {
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #3f3d3d;
+}
+
+.offer-hover {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 220px;
+  min-height: 210px;
+  background-color: rgba(142, 142, 142, 0.5);
+}
+
+.offer-pic {
+  display: block;
+  width: 220px;
+  height: 210px;
+  margin-bottom: 18px;
+}
+
+.offer:hover {
+  background-color: #e5e4e2;
+  border-color: transparent;
+}
+
+.offer:hover .offer-hover {
+  display: block;
+}
+
+.hover-link {
+  display: block;
+  margin: 0 auto;
+  margin-top: 95px;
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f9f9f9;
 }
